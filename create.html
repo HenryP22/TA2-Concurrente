@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>TA2</title>
+
+		<!--Estilos CSS-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+		<!--JQuery-->
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<!--Slider-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  		<!--Mis Scripsts-->
+  		<script type="text/javascript" src="js/create.js"></script>
+	</head>
+	<body>
+		<div id="selector-theme">
+			<div id="to-green"></div>
+			<div id="to-red"></div>
+			<div id="to-blue"></div>
+		</div>
+
+		<section id="global">
+
+			<!--Cabecera-->
+			<header>
+				<div id="logo">
+					<h1>TA2</h1>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="dataset.html">DataSet</a></li>
+						<li><a href="create.html">Crear</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="login" style="width: 80%;">
+				<h4><span>Ingresa tus datos</span></h4>
+				<br>
+				<form>
+					<div class="col-lg-4">
+						<label class="label">Código Hogar</label>
+						<input name="hogarId" id="hogarId" class="form-control" type="text" style="width: 15%;" required />
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">Departamento</label>
+						<input name="departamento" id="departamento" class="form-control" type="text" style="width: 15%;" required />
+					</div>
+					<br>
+					<div class="form-group row">
+					<div class="col-lg-4">
+						<label class="label">Provincia</label>
+						<input name="provincia" id="provincia" class="form-control" type="text" style="width: 15%;" required />
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">Distrito</label>
+						<input name="distrito" id="distrito" class="form-control" type="text" style="width: 15%;" required />
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">Área</label>
+						<select name="area" id="area-select" style="width: 15%;">
+							<option value="Urbano">Urbano</option>
+							<option value="Rural">Rural</option>
+						</select>
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">DNI</label>
+						<input name="personaId" id="personaId" class="form-control"  type="text" style="width: 15%;" required />
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">Género</label>
+						<select name="genero" id="genero-select" style="width: 15%;">
+							<option value="Masculino">Masculino</option>
+							<option value="Femenino">Femenino</option>
+						</select>
+					</div>
+					<br>
+					<div class="col-lg-4">
+						<label class="label">Edad</label>
+						<input name="edad" id="edad" class="form-control" type="number" style="width: 15%;" required />
+					</div>
+					<br>
+					<button id="boton" >
+                        Enviar
+                    </button>
+
+					<span id="estado"></span>
+				</form>
+			</div>
+
+		</section>
+		<footer>
+			Master de JavaScript de Henrry Bustos &copy;
+
+			<a href="#" class="subir">Ir arriba</a>
+		</footer>
+	</body>
+</html>
+
