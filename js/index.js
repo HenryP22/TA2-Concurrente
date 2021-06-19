@@ -5,7 +5,7 @@ var Index = function(){
     var options = {
         responsive: true,
         ajax: {
-            url: "http://172.24.48.1:9000/minimos",
+            url: "http://172.24.240.1:9000/minimos",
             method: "get",
             dataSrc: ""
         },
@@ -87,7 +87,7 @@ var Index = function(){
         },
         dataset: function(){
             $.ajax({
-                url: "http://172.24.48.1:9000/dataset",
+                url: "http://172.24.240.1:9000/dataset",
                 method: "GET",
                 dataSrc: "",
                 success: function(result){  
@@ -123,7 +123,7 @@ var Index = function(){
         },
         min: function(){
             $.ajax({
-                url: "http://172.24.48.1:9000/minimos",
+                url: "http://172.24.240.1:9000/minimos",
                 method: "GET",
                 dataSrc: "",
                 success: function(result){  
@@ -160,7 +160,7 @@ var Index = function(){
         post: function(){
             var hogarId = localStorage.getItem("hogarId");
             $.ajax({
-                url: `http://172.24.48.1:9000/personas/${hogarId}`,
+                url: `http://172.24.240.1:9000/personas/${hogarId}`,
                 method: "GET",
                 dataSrc: "",
                 success: function(result){ 

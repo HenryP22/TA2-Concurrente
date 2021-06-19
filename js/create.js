@@ -20,7 +20,7 @@ var Creates = function(){
                 
 
                 $.ajax({
-                    url: "http://172.24.48.1:9000/knn-personas",
+                    url: "http://172.24.240.1:9000/knn-personas",
                     method: "POST",
                     data: JSON.stringify(data),
                     dataType: 'json',

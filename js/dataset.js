@@ -5,7 +5,7 @@ var DataSets = function(){
     var options = {
         responsive: true,
         ajax: {
-            url: "http://172.24.48.1:9000/dataset",
+            url: "http://172.24.240.1:9000/dataset",
             method: "get",
             dataSrc: ""
         },
